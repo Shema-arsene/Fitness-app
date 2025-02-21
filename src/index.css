@@ -1,0 +1,126 @@
+@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Montserrat:wght@700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#root,
+.app {
+  height: 100%;
+  width: 100%;
+  font-family: "DM Sans", sans-serif;
+  /* @apply text-gray-500; */
+  /* @apply color: #5e0000; */
+}
+
+/* Custom Utilities */
+@layer utilities {
+  /* Colors */
+  .text-gray-20 {
+    color: #f8f4eb;
+  }
+  .text-gray-50 {
+    color: #efe6e6;
+  }
+  .text-gray-100 {
+    color: #dfcccc;
+  }
+  .text-gray-500 {
+    color: #5e0000;
+  }
+  .text-primary-100 {
+    color: #ffe1e0;
+  }
+  .text-primary-300 {
+    color: #ffa6a3;
+  }
+  .text-primary-500 {
+    color: #ff6b66;
+  }
+  .text-secondary-400 {
+    color: #ffcd5b;
+  }
+  .text-secondary-500 {
+    color: #ffc132;
+  }
+
+  .bg-gray-20 {
+    background-color: #f8f4eb;
+  }
+  .bg-gray-50 {
+    background-color: #efe6e6;
+  }
+  .bg-gray-100 {
+    background-color: #dfcccc;
+  }
+  .bg-gray-500 {
+    background-color: #5e0000;
+  }
+  .bg-primary-100 {
+    background-color: #ffe1e0;
+  }
+  .bg-primary-300 {
+    background-color: #ffa6a3;
+  }
+  .bg-primary-500 {
+    background-color: #ff6b66;
+  }
+  .bg-secondary-400 {
+    background-color: #ffcd5b;
+  }
+  .bg-secondary-500 {
+    background-color: #ffc132;
+  }
+
+  /* Background Images */
+  .bg-gradient-yellowred {
+    background: linear-gradient(90deg, #ff616a 0%, #ffc837 100%);
+  }
+  .bg-mobile-home {
+    background-image: url("./assets/HomePageGraphic.png");
+    background-size: cover;
+    background-position: center;
+  }
+
+  /* Fonts */
+  .font-dmsans {
+    font-family: "DM Sans", sans-serif;
+  }
+  .font-montserrat {
+    font-family: "Montserrat", sans-serif;
+  }
+
+  /* Content (Pseudo-elements) */
+  .content-evolvetext::before {
+    content: url("./assets/EvolveText.png");
+  }
+  .content-abstractwaves::before {
+    content: url("./assets/AbstractWaves.png");
+  }
+  .content-sparkles::before {
+    content: url("./assets/Sparkles.png");
+  }
+  .content-circles::before {
+    content: url("./assets/Circles.png");
+  }
+
+  /* Responsive Screens */
+  @media (min-width: 480px) {
+    .xs\:block {
+      display: block;
+    }
+  }
+  @media (min-width: 768px) {
+    .sm\:block {
+      display: block;
+    }
+  }
+  @media (min-width: 1060px) {
+    .md\:block {
+      display: block;
+    }
+  }
+}
