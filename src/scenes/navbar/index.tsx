@@ -54,7 +54,9 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
                   />
                 </div>
                 <div className={`${flexBetween} w-full gap-8 text-sm`}>
-                  <p>Sign in</p>
+                  <p className="hover:text-[#5e0000] duration-300 cursor-pointer">
+                    Sign in
+                  </p>
                   <ActionButton setSelectedPage={setSelectedPage}>
                     Become a member
                   </ActionButton>
