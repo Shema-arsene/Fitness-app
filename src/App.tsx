@@ -25,7 +25,7 @@ function App() {
 
   return (
     <>
-      <div className="app bg-gray-20">
+      <div className="app bg-gray-20 text-[#5e0000]">
         <Navbar
           isTopOfPage={isTopOfPage}
           selectedPage={selectedPage}
@@ -33,9 +33,6 @@ function App() {
         />
         <Home setSelectedPage={setSelectedPage} />
         <Benefits setSelectedPage={setSelectedPage} />
-        <div className="h-[500px]"></div>
-        <div className="h-[500px]"></div>
-        <div className="h-[500px]"></div>
       </div>
     </>
   )
