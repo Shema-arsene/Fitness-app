@@ -49,7 +49,7 @@ const Benefits = ({ setSelectedPage }: Props) => {
   return (
     <section
       id={`${SelectedPage.Benefits}`}
-      className="mx-auto min-h-full h-[1000px] w-5/6 py-20"
+      className="mx-auto h-fit w-5/6 py-20"
     >
       <motion.div
         onViewportEnter={() => setSelectedPage(SelectedPage.Benefits)}
@@ -179,7 +179,7 @@ const Benefits = ({ setSelectedPage }: Props) => {
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true, amount: 0.5 }}
-                transition={{ delay: 1.5, duration: 1 }}
+                transition={{ delay: 1.2, duration: 1 }}
                 variants={{
                   hidden: { opacity: 0, x: 50 },
                   visible: { opacity: 1, x: 0 },
